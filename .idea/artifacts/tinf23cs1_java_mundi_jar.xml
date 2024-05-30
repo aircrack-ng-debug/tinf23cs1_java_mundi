@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="tinf23cs1_java_mundi:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/tinf23cs1_java_mundi_jar</output-path>
+    <root id="archive" name="tinf23cs1_java_mundi.jar">
+      <element id="module-output" name="tinf23cs1_java_mundi" />
+    </root>
+  </artifact>
+</component>
