@@ -6,6 +6,7 @@ import gui.*;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 
 
 public class TestKlasse {
@@ -74,11 +75,13 @@ public class TestKlasse {
         }
 
         /*4.3 f)*/
-        for(Lehrbeauftragter l : lehrbeauftragtenFeld){
+        List<Lehrbeauftragter> lehrbeauftragterList = Arrays.asList(lehrbeauftragtenFeld);
+        for(Lehrbeauftragter l : lehrbeauftragterList){
             System.out.println(l.toString());
         }
 
         /*4.3 g)*/
+        Lehrbeauftragter l_einfallsreich = lehrbeauftragterList.get(1);
         ArrayList<IKlausurSchreiber> arrayList = new ArrayList<IKlausurSchreiber>();
         for(DHStudent dhStudent : dhStudentenFeld){
             System.out.println(dhStudent.getSemester() + "getsemester");
@@ -87,6 +90,9 @@ public class TestKlasse {
                 System.out.println("Added");
             }
         }
+        l_einfallsreich.setPrueflinge((IKlausurSchreiber[]) arrayList.toArray()); // alle prueflinge aus 1 und 2ten Semester
+        l_einfallsreich.lasseKlausurSchreiben(); // musste casten weil arraylist.toArray ist Object
+
 
         if(arrayList.toArray().length == 0){
             throw new Feldgroesse0Exception("Keine Prueflinge vorhanden! :-(");
