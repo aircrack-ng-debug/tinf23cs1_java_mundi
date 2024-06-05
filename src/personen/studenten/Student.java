@@ -20,9 +20,9 @@ public class Student extends Person implements IKlausurSchreiber, Cloneable{
         }
         random = new Random(System.currentTimeMillis());
         if (this instanceof DHStudent){
-            System.out.println("Hello World");
+
             semester = random.nextInt(6)+1;
-            System.out.println(semester);
+
         }else{
             semester = random.nextInt(12) + 1; // random nextint von 12 Ziffern 0-11 sprich + 1 = 1 - 12
         }

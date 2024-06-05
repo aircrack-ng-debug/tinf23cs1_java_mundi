@@ -11,7 +11,7 @@ import java.util.List;
 
 public class TestKlasse {
 
-    static Student studentenFeld[] = {
+    static Student []  studentenFeld= {
             new Student("Emil"),
             new Student("Emil"),
             new Student("Armin"),
@@ -90,15 +90,15 @@ public class TestKlasse {
                 System.out.println("Added");
             }
         }
-        l_einfallsreich.setPrueflinge((IKlausurSchreiber[]) arrayList.toArray()); // alle prueflinge aus 1 und 2ten Semester
-        l_einfallsreich.lasseKlausurSchreiben(); // musste casten weil arraylist.toArray ist Object
+        System.out.println(arrayList);
 
-
+        /*4.3 h) */
         if(arrayList.toArray().length == 0){
             throw new Feldgroesse0Exception("Keine Prueflinge vorhanden! :-(");
         }
 
         System.out.println("Anzahl der Prüflinge: " + arrayList.toArray().length);
+
         IKlausurSchreiber prueflinge[] = new IKlausurSchreiber[arrayList.size()];
         prueflinge = arrayList.toArray(prueflinge);
         lehrbeauftragtenFeld[1].setPrueflinge(prueflinge);
@@ -149,6 +149,8 @@ public class TestKlasse {
     }
 
     public static void main(String[] args) {
+
+        System.out.println(Thread.currentThread().getName());
         TestKlasse test = new TestKlasse();
 
         /*Aufgabe 5*/
@@ -157,6 +159,8 @@ public class TestKlasse {
             m.inKantineEssen();
         }
 
+        /*DHStudent dhstudent = new DHStudent("Alfred","Tinf23cs1");
+        System.out.println(dhstudent.toString());*/
 
     }
 }

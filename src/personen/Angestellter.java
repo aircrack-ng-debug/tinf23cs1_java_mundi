@@ -8,7 +8,6 @@ public class Angestellter extends Person implements IMitarbeiter{
         super(name);
         this.personalNr = personalNr;
 
-
     }
 
 
