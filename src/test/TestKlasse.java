@@ -159,6 +159,15 @@ public class TestKlasse {
             m.inKantineEssen();
         }
 
+        DHStudent paul = new DHStudent("alfred","Tinf");
+        System.out.println(paul.toString());
+        Person.druckeAnzahl();
+        paul = new DHStudent("Gert","tinf");
+        System.out.println(paul.toString());
+        Person.druckeAnzahl();
+
+
+
         /*DHStudent dhstudent = new DHStudent("Alfred","Tinf23cs1");
         System.out.println(dhstudent.toString());*/
 

@@ -50,6 +50,7 @@ public abstract class Person {
         }
     }
 
+
     public synchronized void anzahlInkrementieren(){
 
             int anzahl = Person.anzahl;

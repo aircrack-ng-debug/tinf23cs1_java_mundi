@@ -58,11 +58,11 @@ public class DHStudent extends Student implements IMitarbeiter {
         System.out.printf("DHStudent.anzahl: " + DHStudent.anzahl + "\n");
     }
 
-
+    /*
     @Override
     public String toString() {
         return this.kurs + ": " + this.name + " (" + this.semester + ".Sem.)";
-    }
+    }*/
 
     @Override
     public void inKantineEssen(){
