@@ -36,6 +36,9 @@ public abstract class Person {
 
     public abstract void druckeObjekt();
 
+    /**
+     *  wir haben finalize implementiert damit sichergestellt wird dass das Objekt auch nicht verwendet wird.
+     */
     @Override
     public void finalize(){
         if(synchronisationsArt == synchronisationsArtTyp.MONITOR){
