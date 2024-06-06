@@ -99,11 +99,11 @@ public class TestKlasse {
 
         System.out.println("Anzahl der Prüflinge: " + arrayList.toArray().length);
 
+        /*4.3 i)*/
         IKlausurSchreiber prueflinge[] = new IKlausurSchreiber[arrayList.size()];
         prueflinge = arrayList.toArray(prueflinge);
         lehrbeauftragtenFeld[1].setPrueflinge(prueflinge);
 
-        /*4.3 i)*/
         System.out.println("Lehrbeauftragter " + lehrbeauftragtenFeld[1].getName() + "laesst eine Klausur schreiben:");
         lehrbeauftragtenFeld[1].lasseKlausurSchreiben();
 

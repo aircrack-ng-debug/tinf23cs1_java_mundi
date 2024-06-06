@@ -11,6 +11,7 @@ public class Student extends Person implements IKlausurSchreiber, Cloneable{
     private Random random;
 
 
+
     public Student(String Name){
         super(Name);
         try {
@@ -18,6 +19,7 @@ public class Student extends Person implements IKlausurSchreiber, Cloneable{
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
+
         random = new Random(System.currentTimeMillis());
         if (this instanceof DHStudent){
 
@@ -35,8 +37,10 @@ public class Student extends Person implements IKlausurSchreiber, Cloneable{
         }
     }
 
+
     public void setBafoegSchulden(double a){
         this.bafoegSchulden =a;
+
     }
 
     @Override
